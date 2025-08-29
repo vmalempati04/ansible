@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-    name: "vamsi"
+    person name: "vamsi"
     height: "6"
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-      msg: "{{name}}, height is {{height}}"
+      msg: "{{person name}}, height is {{height}}"
