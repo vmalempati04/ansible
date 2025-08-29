@@ -1,7 +1,10 @@
 - name: ansible from variable
   hosts: local
   connection: local
+  vars:
+    name: "chaitanya"
+    height: "6"
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-      msg: "chaitanya is good boy"
+      msg: "{{name}}, height is {{height}}"
