@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: "chaitanya"
+    name: "vamsi"
     height: "6"
   tasks:
   - name: print the variable
