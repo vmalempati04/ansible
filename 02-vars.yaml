@@ -1,0 +1,7 @@
+- name: ansible from variable
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the variable
+    ansible.builtin.debug:
+      msg: "chaitanya is good boy"
