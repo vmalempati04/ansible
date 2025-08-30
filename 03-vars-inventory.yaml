@@ -4,4 +4,4 @@
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-      msg: "{{person_name}}, height is {{height}}"
+      msg: "{{person}}, height is {{height}}"
