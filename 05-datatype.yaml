@@ -1,0 +1,21 @@
+- name: masters course information
+  hosts: local
+  connection: local
+  vars:
+    course_name: "masters with computer technoloy" #string
+    duration: 120hrs #number
+    topics: #list
+    - linux
+    - shell scripiting
+    - anisble
+    - aws
+    lives: true #boolen
+    tools: # maps
+    ci: jenikins
+    cloud: aws
+    container: docker
+  tasks:
+    - name: print course information 
+      ansible.builtin.debug:
+        msg: i am leraning {{course_name}},it take {{duration}},covering topics is {{topics}},class are in {{lives}},and tools we using {{tools}}.
+
