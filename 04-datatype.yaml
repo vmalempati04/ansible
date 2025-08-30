@@ -1,0 +1,21 @@
+- name: devops course information
+  hosts: local
+  connection: local
+  vars:
+    course_name: "devops with aws"
+    duration: 120hrs
+    topics:
+    - linux
+    - shell scripiting
+    - anisble
+    - aws
+    lives: true
+    tools:
+    ci: jenikins
+    cloud: aws
+    container: docker
+  tasks:
+    - name: print devops information 
+      ansible.builtin.debug:
+      msg: i am leraning {{course-name}},it take {{duration}},covering topics is {{topics}},class are in {{lives}},and tools we using {{tools}}.
+
