@@ -19,3 +19,4 @@
       ansible.builtin.debug:
         msg: i am leraning {{course_name}},it take {{duration}},covering topics is {{topics}},class are in {{lives}},and tools we using {{tools}}.
 
+# vamsi
