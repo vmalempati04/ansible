@@ -1,0 +1,15 @@
+- name: check number is greater then or less than 
+  hosts: local 
+  connection: local
+  vars:
+    my_number: 20
+  tasks:
+    - name: print number is greater then 15
+      anisble.builtin.dedug:
+        msg: "given {{my_number}} is greater then"
+      when: my_number > 15
+
+    - name: print number is less then 15
+      anisble.builtin.dedug:
+        msg: "given {{my_number}} is less then"
+      when: my_number <= 15
