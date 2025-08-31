@@ -5,7 +5,7 @@
     my_number: 20
   tasks:
     - name: print number is greater then 15
-      anisble.builtin.dedug:
+      ansible.builtin.dedug:
         msg: "given {{my_number}} is greater then"
       when: my_number > 15
 
