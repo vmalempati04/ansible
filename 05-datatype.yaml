@@ -11,9 +11,9 @@
     - aws
     lives: true #boolen
     tools: # maps
-    ci: jenikins
-    cloud: aws
-    container: docker
+      ci: jenikins
+      cloud: aws
+      container: docker
   tasks:
     - name: print course information 
       ansible.builtin.debug:
